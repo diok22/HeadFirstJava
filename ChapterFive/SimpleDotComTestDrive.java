@@ -7,11 +7,11 @@ public class SimpleDotComTestDrive {
 
     dot.setLocationCells(locations);
 
-    String userGuess = "2"
+    String userGuess = "2";
 
     String result = dot.checkYourself(userGuess);
 
-    String testResult = "failed"
+    String testResult = "failed";
 
     if (result.equals("hit")) {
       testResult = "passed";
