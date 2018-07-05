@@ -74,7 +74,7 @@ public class DotComBust {
     //
 
   public static void main (String[] args) {
-    DotComGame game = new DotComGame(); // create game object
+    DotComBust game = new DotComBust(); // create game object
     game.setUpGame(); // set up game
     game.startPlaying(); // start the main game loop
   }
