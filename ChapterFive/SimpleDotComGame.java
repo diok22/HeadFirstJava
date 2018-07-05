@@ -8,7 +8,7 @@ public class SimpleDotComGame {
     SimpleDotCom theDotCom = new SimpleDotCom();
     int randomNum = (int) (Math.random() * 5);
 
-    int[] locations = {randomNum, randomNum+1, randomNum+2}
+    int[] locations = {randomNum, randomNum+1, randomNum+2};
 
     theDotCom.setLocationCells(locations);
 
@@ -17,13 +17,13 @@ public class SimpleDotComGame {
     while (isAlive = true) {
       String guess = helper.getUserInput("enter a number");
       String result = theDotCom.checkYourself(guess);
-      numOfGuesses++
+      numOfGuesses++;
 
       if (result.equals("kill")) {
         isAlive = false;
-        System.out.print("You took " + numOfGuesses + "guesses")
+        System.out.print("You took " + numOfGuesses + "guesses");
       }
-      
+
     }
 
   }
