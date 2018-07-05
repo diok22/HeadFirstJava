@@ -4,7 +4,7 @@ public class DotComBust {
 
   // declare and initialize the variables we'll need
   private GameHelper helper = new GameHelper();
-  private ArrayList<DotCom> dotComList = new ArrayList<DotCom>();
+  private ArrayList<DotCom> dotComsList = new ArrayList<DotCom>();
   private int numOfGuesses = 0;
   //
 
@@ -34,7 +34,7 @@ public class DotComBust {
   }
 
   private void startPlaying() {
-    while (!dotComList.isEmpty()) { // as long DotCom list is NOT empty
+    while (!dotComsList.isEmpty()) { // as long DotCom list is NOT empty
       String userGuess = helper.getUserInput("Enter a guess");
       checkUserGuess(userGuess);
     }
@@ -46,7 +46,7 @@ public class DotComBust {
     numOfGuesses++; // increment the number of guesses the user has made
     String result = "miss"; // assume it's a miss unless told otherwise
     // repeat with all DotComs in the list
-    for (int x = 0; < dotComsList.size(); x++) {
+    for (int x = 0; x < dotComsList.size(); x++) {
       // ask the DotCom to check the user guess, looking for hit or miss
       result = dotComsList.get(x).checkYourself(userGuess);
       if (result.equals("hit")) {

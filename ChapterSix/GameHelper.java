@@ -9,7 +9,7 @@ public class GameHelper {
   private int [] grid = new int[gridSize];
   private int comCount = 0;
 
-  public string getUserInput(String prompt) {
+  public String getUserInput(String prompt) {
     String inputLine = null;
     System.out.print(prompt + " ");
     try {
@@ -65,7 +65,7 @@ public class GameHelper {
         grid[coords[x]] = 1;
         row = (int) (coords[x] / gridLength);
         column = coords[x] % gridLength;
-        temp = String.valueOF(alphabet.charAt(column));
+        temp = String.valueOf(alphabet.charAt(column));
 
         alphaCells.add(temp.concat(Integer.toString(row)));
         x++;

@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Dot Com {
+public class DotCom {
   // instance variables
   private ArrayList<String> locationCells;
   private String name;
